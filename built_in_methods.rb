@@ -8,19 +8,22 @@
 # The return value is "hello world"
 "Hello World".downcase
 
-
+# the include method is called on the string object "Hello World"
+# the argument passed is "Hello"; the method returns a boolean value based on whether or not the argument is in the string. 
 "Hello World".include?("Hello")
 
-
+# the end_with? method is called on the string "Hello World"
+# the argeument passed is "Hello"' the method returns a boolean value based on whether or not the argument ends the string. 
 "Hello World".end_with?("Hello")
 
-
+# the end_with? method is called on the string "Hello World"
+# the argument passed is "rld" the method returns a boolean value based on whether or not the argument ends the string.
 "Hello World".end_with?("rld")
 
-
+# the .even? method is called on the integer 12. It returns a boolean based on whether or not the integer is even. It would return true.
 12.even?
 
-
+# the .next method is called on the integer 18. It returns the value of the number following the given integer, which in this case is 19. 
 18.next
 
 
@@ -40,6 +43,20 @@ first_name = "Jeff"
 puts first_name.start_with?("J")
 
 
+# the .downcase! method is called on the first_name variable, which stores the string "Andi".
+# the .downcase! method returns all characters in a given string as lowercase.
+# in this example, the return value is "andi".
+# the p command prints the return value of the .downcase! method (andi) to the console.
+first_name = "Andi"
+p first_name.downcase!
+
+# the .length method is called on the fave_weather variable, which stores the string "snow".
+# the .length method returns the number of characters in a given string. 
+# in this example, the return value is 4 because there are 4 characters in the value stored as the fave_weather variable.
+# the p command prints the return value of 4 of the .length method (4) to the console.
+fave_weather = "snow"
+p fave_weather.length
+
 
 # SECTION 3: Calling methods on variables assigned to integers.
 # Declare 2 variables assigned to integer objects.
@@ -47,10 +64,33 @@ puts first_name.start_with?("J")
 # https://ruby-doc.org/core-3.1.0/Integer.html
 # Include comments above each method call explaining the impact and return value of that method.
 
+# the .odd method is called on the number_1 variable assigned to integer 5.
+# the .odd method prints true or false based on if the integer provided is odd.
+# in this example, the result will be true.
+number_1 = 5
+number_1.odd?
 
+# the .even method is called on the number_1 variable assigned to integer 5.
+# the .even method prints true or false based on if the integer provided is even.
+# in this example, the result will be true.
+number_2 = 10
+number_2.even?
 
 # SECTION 4: Calling methods on variables assigned to arrays.
 # Declare 2 variables assigned to arrays.
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Array.html
 # Include comments above each method call explaining the impact and return value of that method.
+
+# the .count method is called on the weather variable.
+# the .count method returns the number of elements assigned to the weather variable. 
+# in this example, the output of the return value is 3, since there are 3 string elements assigned to the weather variable.
+weather = ["snow", "rain", "fog"]
+weather.count
+
+# the .insert method is called on the temps variable.
+# the .insert method inserts a new element to the array in the given index position.
+# in this exmaple, the output of the return value is "[65, 43, 57, 66]" because the index position provided was 2 and the element given to insert was 57.
+temps = [65, 43, 66]
+temps.insert(2, 57)
+
