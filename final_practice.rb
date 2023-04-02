@@ -65,3 +65,33 @@ p square(4)
 
 # the return value of the square method is 16; I passed 1 argument into the method. 
 # the date type of the argument provided was an integer 
+
+# 5: Write a method named check_stock that satisfies the following interaction pattern:
+# Hint: You will only write one check_stock method that checks the quantity and then prints the corresponding statement.
+def check_stock(quantity, type)
+    if quantity >= 4
+        puts "#{type} is stocked"
+    elsif 
+        quantity <= 3
+        p "#{type} - running LOW"
+    elsif
+        quantity == 0 
+        p "#{type} - OUT of stock!"
+        
+    end
+
+end
+
+
+check_stock(4, "Coffee");
+# => "Coffee is stocked"
+
+
+#check_stock(3, "Tortillas");
+# => "Tortillas - running LOW"
+
+#check_stock(0, "Cheese");
+# => "Cheese - OUT of stock!"
+
+#check_stock(1, "Salsa");
+# => "Salsa - running LOW"
